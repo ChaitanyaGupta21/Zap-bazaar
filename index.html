@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAP BAZAAR</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  
+  <!-- Header Section -->
+  <header>
+    <div class="banner">
+      <div class="header-content">
+        <h1>ZAP BAZAAR</h1>
+        <div class="navigation-buttons">
+          <button id="loginBtn">Login</button>
+          <button onclick="showSection('mobiles')">Home</button>
+          <button onclick="showSection('laptops')">Laptops</button>
+
+        </div>
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="search-bar" 
+            placeholder="Search phones by name or company..." 
+            oninput="filterPhones()">
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+  <!-- Mobile Section -->
+  <main id="mobiles" class="section">
+    <h2 style="text-align: center;">Mobile Phones</h2>
+    <div id="phone-list" class="phone-list">
+             <!-- Apple Phones -->
+             <div class="phone-item">
+              <img src="assets/iphone 15 pro.jpg" alt="iPhone 15 Pro" class="phone-image">
+              <h3>iPhone 15 Pro</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.reliancedigital.in/apple-iphone-15-pro-128-gb-natural-titanium/p/493839341'" >Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/apple_iphone_15_pro-12557.php'" >Phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+              <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                <span class="">Compare</span>
+              </button>
+
+              <button class="comment-btn" onclick="scrollToCommentSection()">
+                <span class="reaction-icon">💭</span>
+              </button>
+
+                </button>
+                <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                  <span class="reaction-icon">👍</span>
+                </button>
+                <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                  <span class="reaction-icon">👎</span>
+                </button>
+
+               
+              </div>
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/iPhone 14 Pro.jpg" alt="iPhone 14 Pro" class="phone-image">
+              <h3>iPhone 14 Pro</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://flipkart.com/apple-iphone-14-pro-silver-128-gb/p/itm6933eb5fb30fb'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/apple_iphone_14_pro-11860.php'" >Phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/iPhone 13.jpg" alt="iPhone 13" class="phone-image">
+              <h3>iPhone 13</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.in/Apple-iPhone-13-128GB-Blue/dp/B09G9BL5CP'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/apple_iphone_13-11103.php'" >Phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+      
+             <!-- Samsung Phones -->
+             <div class="phone-item">
+              <img src="assets/Samsung Galaxy S23.jpg" alt="Samsung Galaxy S23" class="phone-image">
+              <h3>Samsung Galaxy S23</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.in/Samsung-Galaxy-Snapdragon-Cream-Storage/dp/B0BTYTBN6W'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/samsung_galaxy_s23-12082.php'">phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+
+                </div>
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/Samsung Galaxy A54.jpg" alt="Samsung Galaxy A54" class="phone-image">
+              <h3>Samsung Galaxy A54</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.flipkart.com/samsung-galaxy-a54-5g-awesome-lime-256-gb/p/itmfae1e9dfaa4a0?pid=MOBGNE4STRDFQHDH'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/samsung_galaxy_a54-12070.php'">phone Info</button>
+              </div>
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/Samsung Galaxy Z Fold 5.jpg" alt="Samsung Galaxy Z Fold 5" class="phone-image">
+              <h3>Samsung Galaxy Z Fold 5</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.flipkart.com/samsung-galaxy-z-fold5-icy-blue-512-gb/p/itm066a0714a4f3c'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/samsung_galaxy_z_fold5-12418.php'">phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>   
+            </div>
+      
+            <!-- Redmi Phones -->
+            <div class="phone-item">
+              <img src="assets/Redmi Note 13.jpg" alt="Redmi Note 13" class="phone-image">
+              <h3>Redmi Note 13</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.in/Redmi-Storage-Bezel-Less-Slimmest-Pro-Grade/dp/B0CQPGG8KG'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/xiaomi_redmi_note_13-12776.php'">phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/Redmi K60.jpg" alt="Redmi K60" class="phone-image">
+              <h3>Redmi K60</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.91mobiles.com/xiaomi-redmi-k60-pro-5g-price-in-india'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/xiaomi_redmi_k60_ultra-12470.php'">phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+      
+            <!-- OnePlus Phones -->
+            <div class="phone-item">
+              <img src="assets/OnePlus 12.jpg" alt="OnePlus 12" class="phone-image">
+              <h3>OnePlus 12</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.in/OnePlus-Flowy-Emerald-256GB-Storage/dp/B0CQPPZWVD'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/oneplus_12-12725.php'">phone Info</button>
+              </div>
+              
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/OnePlus 11.jpg" alt="OnePlus 11" class="phone-image">
+              <h3>OnePlus 11</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.in/OnePlus-Eternal-Green-256GB-Storage/dp/B0BQJM2PXW'">buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/oneplus_11-11893.php'">phone Info</button>
+              </div>
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/OnePlus Nord 3.jpg" alt="OnePlus Nord 3" class="phone-image">
+              <h3>OnePlus Nord 3</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.in/OnePlus-Misty-Green-128GB-Storage/dp/B0C7V7VH6Q'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/oneplus_nord_3-12135.php'">phone Info</button>
+              </div>
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+      
+            <!-- Realme Phones -->
+            <div class="phone-item">
+              <img src="assets/Realme 11 Pro.jpg" alt="Realme 11 Pro" class="phone-image">
+              <h3>Realme 11 Pro</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.in/Realme-Sunrise-Beige-12GB-256GB-Storage/dp/B0C78JQQ8M'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/realme_11_pro-12261.php'">phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/Realme C55.jpg" alt="Realme C55" class="phone-image">
+              <h3>Realme C55</h3>
+              <div class="phone-buttons">
+               <button type="button" onclick="location.href='https://www.flipkart.com/realme-c55-sunshower-64-gb/p/itm054283d14c56e'">Buy</button>
+               <button type="button" onclick="location.href='https://www.gsmarena.com/realme_c55-12159.php'">phone Info</button>
+              </div>
+              
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/Realme GT 5 pro.jpg" alt="Realme GT 5 pro" class="phone-image">
+              <h3>Realme GT 5 pro</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.91mobiles.com/realme-gt-5-pro-price-in-india'">Buy</button>
+               <button type="button" onclick="location.href='https://www.91mobiles.com/realme-gt-5-pro-price-in-india'">phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+
+      
+            <!-- Motorola Phones -->
+            <div class="phone-item">
+              <img src="assets/Motorola Edge 40.jpg" alt="Motorola Edge 40" class="phone-image">
+              <h3>Motorola Edge 40</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.flipkart.com/motorola-edge-40-nebula-green-256-gb/p/itmaa0bf9c327a2b'">Buy</button>
+               <button type="button" onclick="location.href='https://www.flipkart.com/motorola-edge-40-nebula-green-256-gb/p/itmaa0bf9c327a2b'">phone Info</button>
+              </div>
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/Motorola Moto G75.jpg" alt="Motorola Moto G75" class="phone-image">
+              <h3>Motorola Moto G75</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.91mobiles.com/moto-g75-price-in-india'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/motorola_moto_g75-13372.php'">phone Info</button>
+              </div>
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+                </div>
+            </div>
+
+            <div class="phone-item">
+              <img src="assets/Motorola Razr 2023.jpg" alt="Motorola Razr 2023" class="phone-image">
+              <h3>Motorola Razr 2023</h3>
+              <div class="phone-buttons">
+                <button type="button" onclick="location.href='https://www.amazon.com/Motorola-Unlocked-Camera-170-82-7-35mm/dp/B0CGVXZSQJ'">Buy</button>
+                <button type="button" onclick="location.href='https://www.gsmarena.com/motorola_razr_40_ultra-12169.php'">phone Info</button>
+              </div>
+
+              <div class="reaction-buttons">
+                <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+                  <span class="">Compare</span>
+                </button>
+  
+                <button class="comment-btn" onclick="scrollToCommentSection()">
+                  <span class="reaction-icon">💭</span>
+                </button>
+  
+                  </button>
+                  <button class="like-btn" onclick="toggleReaction(this, 'like')">
+                    <span class="reaction-icon">👍</span>
+                  </button>
+                  <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+                    <span class="reaction-icon">👎</span>
+                  </button>
+  
+                 
+    </div>
+    </div>
+
+  </main>
+
+  <!-- Laptop Section -->
+<main id="laptops" class="section" style="display: none;">
+  <h2 style="text-align: center;">Laptops</h2>
+  <div id="laptop-list" class="phone-list">
+
+    <!-- Apple Laptops -->
+    <div class="phone-item">
+      <img src="assets/MacBook Pro.jpg" alt="MacBook Pro" class="phone-image">
+      <h3>MacBook Pro</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.apple.com/macbook-pro/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.apple.com/macbook-pro/'">Laptop Info</button>
+      </div>
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+
+    </div>
+
+    <div class="phone-item">
+      <img src="assets/MacBook Air.jpg" alt="MacBook Air" class="phone-image">
+      <h3>MacBook Air</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.apple.com/macbook-air/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.apple.com/macbook-air/'">Laptop Info</button>
+      </div>
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+    </div>
+
+    <!-- HP Laptops -->
+    <div class="phone-item">
+      <img src="assets/HP Envy.jpg" alt="HP Envy" class="phone-image">
+      <h3>HP Envy</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.hp.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.hp.com/'">Laptop Info</button>
+      </div>
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+      
+    </div>
+
+    <div class="phone-item">
+      <img src="assets/hp pavillion gaming.jpg" alt="HP Spectre" class="phone-image">
+      <h3>HP Pavillion Gaming</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.hp.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.hp.com/'">Laptop Info</button>
+      </div>
+
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+</div>
+
+    </div>
+
+    <!-- Dell Laptops -->
+    <div class="phone-item">
+      <img src="assets/Dell XPS.jpg" alt="Dell XPS" class="phone-image">
+      <h3>Dell XPS</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.dell.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.dell.com/'">Laptop Info</button>
+      </div>
+
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+      
+    </div>
+
+    <div class="phone-item">
+      <img src="assets/Dell gaming .jpg" alt="Dell Inspiron" class="phone-image">
+      <h3>Dell Gaming G15</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.dell.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.dell.com/'">Laptop Info</button>
+      </div>
+      
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+
+    </div>
+
+    <!-- Lenovo Laptops -->
+    <div class="phone-item">
+      <img src="assets/Lenovo ThinkPad.jpg" alt="Lenovo ThinkPad" class="phone-image">
+      <h3>Lenovo ThinkPad</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.lenovo.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.lenovo.com/'">Laptop Info</button>
+      </div>
+
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+    </div>
+
+    <div class="phone-item">
+      <img src="assets/Lenovo Ideapad.jpg" alt="Lenovo Ideapad" class="phone-image">
+      <h3>Lenovo Ideapad</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.lenovo.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.lenovo.com/'">Laptop Info</button>
+      </div>
+
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+    </div>
+
+    <!-- ASUS Laptops -->
+    <div class="phone-item">
+      <img src="assets/ASUS ZenBook.jpg" alt="ASUS ZenBook" class="phone-image">
+      <h3>ASUS ZenBook</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.asus.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.asus.com/'">Laptop Info</button>
+      </div>
+
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+
+    </div>
+
+    <div class="phone-item">
+      <img src="assets/ASUS ROG.jpg" alt="ASUS ROG" class="phone-image">
+      <h3>ASUS ROG</h3>
+      <div class="phone-buttons">
+        <button type="button" onclick="location.href='https://www.asus.com/'">Buy</button>
+        <button type="button" onclick="location.href='https://www.asus.com/'">Laptop Info</button>
+      </div>
+      <div class="reaction-buttons">
+        <button class="compare-btn" onclick="location.href='https://www.gsmarena.com/compare.php3'">
+          <span class="">Compare</span>
+        </button>
+
+        <button class="comment-btn" onclick="scrollToCommentSection()">
+          <span class="reaction-icon">💭</span>
+        </button>
+
+          </button>
+          <button class="like-btn" onclick="toggleReaction(this, 'like')">
+            <span class="reaction-icon">👍</span>
+          </button>
+          <button class="dislike-btn" onclick="toggleReaction(this, 'dislike')">
+            <span class="reaction-icon">👎</span>
+          </button>
+
+         
+        </div>
+      
+    </div>
+    </div>
+
+</main>
+
+<!-- Comment Section -->
+<div id="comment-section" class="comment-section">
+  <h2>Comments</h2>
+  <div class="comment">
+    <h3>Akshat Jain</h3>
+    <p>The iPhone 15 Pro is amazing! The camera quality is top-notch.</p>
+  </div>
+  <div class="comment">
+    <h3>Ashish Mishra</h3>
+    <p>I'm loving the Samsung Galaxy S23. The battery life is incredible.</p>
+  </div>
+  <div class="comment">
+    <h3>Aunj Patel</h3>
+    <p>The iPhone 13 is still a great phone. Very reliable and fast.</p>
+  </div>
+  <div class="comment">
+    <h3>Divyansh Pandey</h3>
+    <p>The ASUS ZenBook is perfect for my work needs. Highly recommend it!</p>
+  </div>
+  <div class="comment">
+    <h3>Chetan Gupta</h3>
+    <p>ASUS ROG is a beast for gaming. Couldn't be happier with my purchase.</p>
+  </div>
+ 
+  <!-- Comment Form -->
+  <div class="comment-form">
+    <h3>Leave a Comment</h3>
+    <form id="commentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+  <!--login page -->
+  <!-- Popup Modal for Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  
+
+  
+<!-- Footer -->
+<footer>
+  <p> One Click To Future ZAP BAZAAR </p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
